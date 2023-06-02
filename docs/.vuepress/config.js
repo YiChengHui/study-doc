@@ -5,14 +5,18 @@ module.exports = {
     markdown: {},
     themeConfig: {
         sidebarDepth: 2,
-        sidebar: [
-            {
-                title: '第一章-导论',
-                collapsable: false,
-                children: [
-                    '/第一章/'
-                ]
-            }
-        ],
+        sidebar: [{
+            title: '第一章-导论',
+            collapsable: false,
+            children: [
+                '/第一章/',
+            ]
+        }, {
+            title: '第二章-供求分析',
+            collapsable: false,
+            children: [
+                '/第二章/',
+            ]
+        }]
     }
 }
