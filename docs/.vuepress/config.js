@@ -17,6 +17,12 @@ module.exports = {
             children: [
                 '/第二章/',
             ]
+        }, {
+            title: '第三章-消费者效用分析',
+            collapsable: false,
+            children: [
+                '/第三章/',
+            ]
         }]
     }
 }
