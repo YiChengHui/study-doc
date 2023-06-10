@@ -23,6 +23,12 @@ module.exports = {
             children: [
                 '/第三章/',
             ]
+        }, {
+            title: '第四章-需求弹性与供给弹性分析',
+            collapsable: false,
+            children: [
+                '/第四章/',
+            ]
         }]
     }
 }
