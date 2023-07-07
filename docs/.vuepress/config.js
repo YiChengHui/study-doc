@@ -4,6 +4,7 @@ module.exports = {
     description: '管理经济学',
     markdown: {},
     themeConfig: {
+        displayAllHeaders: true,
         sidebarDepth: 2,
         sidebar: [{
             title: '第一章-导论',
@@ -29,6 +30,19 @@ module.exports = {
             children: [
                 '/第四章/',
             ]
-        }]
+        }],
+        nav: [
+            {
+                text: '首页',
+                link: '/'
+            },
+            {
+                text: '关于我',
+                items: [
+                    { text: '我的博客', link: 'https://yichenghui.net' },
+                    { text: 'Github', link: 'https://github.com/yichenghui' }
+                ]
+            }
+        ]
     }
 }
