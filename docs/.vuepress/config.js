@@ -30,6 +30,12 @@ module.exports = {
             children: [
                 '/第四章/',
             ]
+        }, {
+            title: '第五章-生产要素投入的决策分析',
+            collapsable: false,
+            children: [
+                '/第五章/',
+            ]
         }],
         nav: [
             {
