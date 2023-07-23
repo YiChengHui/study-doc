@@ -36,6 +36,12 @@ module.exports = {
             children: [
                 '/第五章/',
             ]
+        }, {
+            title: '第六章-成本分析',
+            collapsable: false,
+            children: [
+                '/第六章/',
+            ]
         }],
         nav: [
             {
