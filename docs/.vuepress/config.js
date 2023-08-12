@@ -1,47 +1,68 @@
 module.exports = {
     host: 'localhost',
-    title: '管理经济学',
-    description: '管理经济学',
+    title: '自考笔记',
+    description: '自考笔记',
     markdown: {},
     themeConfig: {
         displayAllHeaders: true,
         sidebarDepth: 2,
         sidebar: [{
-            title: '第一章-导论',
+            title: '管理经济学',
             collapsable: false,
-            children: [
-                '/第一章/',
-            ]
+            children: [{
+                title: '第一章-导论',
+                collapsable: false,
+                children: [
+                    '/管理经济学/第一章/',
+                ]
+            }, {
+                title: '第二章-供求分析',
+                collapsable: false,
+                children: [
+                    '/管理经济学/第二章/',
+                ]
+            }, {
+                title: '第三章-消费者效用分析',
+                collapsable: false,
+                children: [
+                    '/管理经济学/第三章/',
+                ]
+            }, {
+                title: '第四章-需求弹性与供给弹性分析',
+                collapsable: false,
+                children: [
+                    '/管理经济学/第四章/',
+                ]
+            }, {
+                title: '第五章-生产要素投入的决策分析',
+                collapsable: false,
+                children: [
+                    '/管理经济学/第五章/',
+                ]
+            }, {
+                title: '第六章-成本分析',
+                collapsable: false,
+                children: [
+                    '/管理经济学/第六章/',
+                ]
+            }]
         }, {
-            title: '第二章-供求分析',
+            title: '操作系统概论',
             collapsable: false,
-            children: [
-                '/第二章/',
-            ]
-        }, {
-            title: '第三章-消费者效用分析',
-            collapsable: false,
-            children: [
-                '/第三章/',
-            ]
-        }, {
-            title: '第四章-需求弹性与供给弹性分析',
-            collapsable: false,
-            children: [
-                '/第四章/',
-            ]
-        }, {
-            title: '第五章-生产要素投入的决策分析',
-            collapsable: false,
-            children: [
-                '/第五章/',
-            ]
-        }, {
-            title: '第六章-成本分析',
-            collapsable: false,
-            children: [
-                '/第六章/',
-            ]
+            children: [{
+                title: '第一章-操作系统简介',
+                collapsable: false,
+                children: [
+                    '/操作系统概论/第一章/',
+                ]
+            }, {
+                title: '第二章-进程管理',
+                collapsable: false,
+                children: [
+                    '/操作系统概论/第二章/',
+                ]
+            }]
+            
         }],
         nav: [
             {
