@@ -1,7 +1,10 @@
 module.exports = {
     host: 'localhost',
-    title: '自考笔记',
-    description: '自考笔记',
+    title: '学习笔记',
+    description: '学习笔记',
+    head: [
+        ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ],
     markdown: {},
     themeConfig: {
         displayAllHeaders: true,
@@ -52,7 +55,7 @@ module.exports = {
                     '/操作系统概论/第二章/',
                 ]
             }]
-            
+
         }],
         nav: [
             {
