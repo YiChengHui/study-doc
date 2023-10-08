@@ -69,6 +69,11 @@ module.exports = {
                 children: [
                     '/操作系统概论/第五章/',
                 ]
+            }, {
+                title: '第六章-I/O设备管理',
+                children: [
+                    '/操作系统概论/第六章/',
+                ]
             }]
 
         }],
