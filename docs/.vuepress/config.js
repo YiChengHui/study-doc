@@ -3,7 +3,43 @@ module.exports = {
     title: '学习笔记',
     description: '学习笔记',
     head: [
-        ['link', { rel: 'icon', href: '/favicon.ico' }]
+        ['link', { rel: 'icon', href: '/favicon.ico' }],
+        ['script', {}, `
+            function customPrint() {
+                const dom = document.querySelector('.theme-default-content.content__default').cloneNode(true)
+            
+                const styles = document.querySelectorAll('style')
+            
+                const htmlWindow = window.open()
+            
+                const customStyle = document.createElement('style')
+                customStyle.innerHTML = ".theme-default-content.content__default {page-break-after: always;}"
+                htmlWindow.document.head.appendChild(customStyle)
+            
+                styles.forEach(item => {
+                    htmlWindow.document.head.appendChild(item.cloneNode(true))
+                })
+            
+                htmlWindow.document.body.appendChild(dom)
+
+                htmlWindow.window.print()
+
+                htmlWindow.window.close()
+            }
+            
+
+            window.addEventListener('load', event => {
+                const button = document.createElement('div')
+                button.classList.add('customPrint')
+                button.classList.add('nav-item')
+                button.innerHTML = '打印'
+                button.addEventListener('click', customPrint)
+
+                const navs = document.querySelector('div.theme-container > header > .links .nav-links')
+                navs.insertBefore(button, navs.childNodes[0])
+            })
+            
+        `],
     ],
     markdown: {},
     themeConfig: {
